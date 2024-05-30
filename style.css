@@ -225,6 +225,11 @@ img{
     font-weight: 500;
     color: var(--text-title-color);
 }
+/* right section */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* for phones */
 @media screen and (max-width: 577px){
