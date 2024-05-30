@@ -1,0 +1,224 @@
+:root{
+    --container-gray: #F7F9FC;
+    --title-color: #2E2E48;
+    --purple: #9251F7;
+    --text-title-color: #47516B;
+    --normal-text-color: #79819A;
+    --text-gradient: -webkit-linear-gradient(90deg, #A478E8 0%, #516CF7 100%);
+    --profile-font:Outfit;
+    --default-font:DM Sans;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* left section */
+.left-section{
+    background-color: var(--container-gray);
+    width: 356px;
+}
+.picture-container{
+    width: 355.56px;
+    height: 161.62px;
+}
+
+/* name pic container */
+.name-pic-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 48px 0px 48px;
+    padding-top: 32.32px;
+    font-family: var(--profile-font);
+}
+.name{
+    font-size: 32.32px;
+    font-weight: 500;
+    color: var(--title-color);
+}
+.title{
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.quote{
+    font-size: 18.18px;
+    font-weight: 500;
+    margin-top: 32.32px;
+}
+.quote::before{
+    top:0;
+    content: url(assets/left-semi.png);
+}
+.quote::after{
+    bottom: 0;
+    content: url(assets/right-semi.png);
+}
+.quote-by{
+    font-family: var(--default-font);
+    font-weight: 400;
+    font-size: 12.12px;
+    margin-top: 4.04px;
+    color: var(--normal-text-color);
+}
+
+/* contact information */
+.contact-info-container{
+    font-family: var(--default-font);
+    display: flex;
+    flex-direction: column;
+    padding-top: 32.32px;
+    margin-left: 48.48px;
+    margin-right: 48.48px;
+    margin-top: 32.32px;
+    border-top: 1px solid #E2E6EE;
+}
+.contact-info-container > *:not(:last-child){
+    margin-bottom: 24.24px;
+}
+.email-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.website-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.phone-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.address-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-icon{
+    width: 32.32px;
+    height: 32.32px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 16.16px;
+}
+.contact-title{
+    font-size: 12.12px;
+    font-weight: 400;
+    color: var(--normal-text-color);
+}
+.contact-information{
+    font-size: 14.14px;
+    font-weight: 500;
+    color: var(--text-title-color);
+}
+
+/* social information */
+.socials-container{
+    font-family: var(--default-font);
+    display: flex;
+    flex-direction: column;
+    padding-top: 32.32px;
+    margin-left: 48.48px;
+    margin-right: 48.48px;
+    margin-top: 32.32px;
+    border-top: 1px solid #E2E6EE;
+}
+.socials-container > *:not(:last-child){
+    margin-bottom: 24.24px;
+}
+.instagram-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.twitter-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.dribble-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.linkedin-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.social-icon{
+    width: 32.32px;
+    height: 32.32px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 16.16px;
+}
+.social-icon img{
+    object-fit: cover;
+}
+.social-title{
+    font-size: 12.12px;
+    font-weight: 400;
+    color: var(--normal-text-color);
+}
+.social-information{
+    font-size: 14.14px;
+    font-weight: 500;
+    color: var(--text-title-color);
+}
+
+/* language information */
+.language-container{
+    font-family: var(--default-font);
+    display: flex;
+    flex-direction: column;
+    padding-top: 32.32px;
+    margin-left: 48.48px;
+    margin-right: 48.48px;
+    margin-top: 32.32px;
+    border-top: 1px solid #E2E6EE;
+}
+.language-container > *:not(:last-child){
+    margin-bottom: 24.24px;
+}
+.italian-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.greek-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.english-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.spanish-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.language-icon{
+    width: 32.32px;
+    height: 24.24px;
+    margin-right: 16.16px;
+}
+.language-title{
+    font-size: 12.12px;
+    font-weight: 400;
+    color: var(--normal-text-color);
+}
+.language-name{
+    font-size: 14.14px;
+    font-weight: 500;
+    color: var(--text-title-color);
+}
