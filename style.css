@@ -26,10 +26,6 @@ img{
     background-color: var(--container-gray);
     width: 356px;
 }
-.picture-container{
-    width: 355.56px;
-    height: 161.62px;
-}
 
 /* name pic container */
 .name-pic-container{
@@ -50,16 +46,23 @@ img{
     -webkit-text-fill-color: transparent;
 }
 .quote{
+    position: relative;
     font-size: 18.18px;
     font-weight: 500;
     margin-top: 32.32px;
 }
 .quote::before{
-    top:0;
+    position: absolute;
+    top:-3px;
+    left: -20px;
+    margin-right: 10px;
     content: url(assets/left-semi.png);
 }
 .quote::after{
-    bottom: 0;
+    position: absolute;
+    bottom: -3px;
+    right: 40px;
+    margin-left: 10px;
     content: url(assets/right-semi.png);
 }
 .quote-by{
@@ -221,4 +224,37 @@ img{
     font-size: 14.14px;
     font-weight: 500;
     color: var(--text-title-color);
+}
+
+/* for phones */
+@media screen and (max-width: 577px){
+    .left-section{
+        width: 100% ;
+    }
+    .contact-info-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact-info--item {
+        width: 50%;
+    }
+    .socials-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .socials--item {
+        width: 50%;
+    }
+    .language-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .language--item{
+        width: 50%;
+    }
+    .full-length--item{
+        width: 100%;
+    }
 }
