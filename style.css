@@ -609,8 +609,9 @@ img{
 /* for phones */
 @media screen and (max-width: 577px){
     .left-section{
-        width: 100% ;
+        width: 100%;
     }
+    
     .contact-info-container{
         flex-direction: row;
         flex-wrap: wrap;
@@ -636,5 +637,62 @@ img{
     }
     .full-length--item{
         width: 100%;
+    }
+    /* right section */
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .project-container .inside-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .project-container{
+        margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+    }
+    .project-container .default-container{
+        width: 431px;
+    }
+    .education-container{
+        margin-top: 45px;
+    }
+    .education-container .default-container{
+        margin-top: 10.1px;
+    }
+    .education-container .inside-container{
+        flex-direction: column;
+    }
+    .design-container{
+        flex-direction: column;
+    }
+    .development-container{
+        flex-direction: column;
+    }
+    .right-box{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .right-box .default-container{
+        width: 308.25px;
+        height: 52.2px;
+    }
+    .exp-container{
+        flex-direction: column;
+    }
+    .experience-container{
+        width: 471.35px;
+    }
+    .experience-text{
+        width: 400px;
+    }
+    .skills-container{
+        margin-top: 30px;
+    }
+    .tools-container{
+        width: 471.35px;
     }
 }
