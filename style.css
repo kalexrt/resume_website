@@ -490,10 +490,11 @@ img{
     font-family: var(--default-font);
     color: var(--title-color);
 }
-.skills-container .default-container{
+.skills-container .default-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-basis: calc(20% - 8.08px);
     padding: 16.16px;
 }
 
@@ -524,8 +525,6 @@ img{
 .right-box{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 /* tools information */
 .tools-container{
