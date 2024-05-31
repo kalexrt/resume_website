@@ -228,11 +228,10 @@ img{
 /* right section */
 .main{
     display: flex;
-    flex-wrap: wrap;
 }
 
-.right-section{
-    width: 844.44px;
+.right-section {
+    width: calc(100% - 356px);
     margin-left: 47.98px;
     margin-right: 48.48px;
 }
@@ -679,13 +678,19 @@ img{
     .right-box{
         flex-direction: column;
         flex-wrap: wrap;
+        flex:1;
     }
+
+    .right-box > * {
+        flex:1;
+    }
+
     .right-box .default-container{
-        width: 308.25px;
-        height: 52.2px;
+        flex: 1;
     }
     .exp-container{
         flex-direction: column;
+        margin-bottom: 16.16px
     }
     .experience-container{
         width: 471.35px;
