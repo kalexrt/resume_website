@@ -312,6 +312,7 @@ img{
 /* experience information */
 .experience-container{
     position: relative;
+    width: 80%;
     padding-left: 47.98px;
     border-left: 3px solid var(--container-gray);
 }
