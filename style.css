@@ -248,13 +248,13 @@ img{
     flex-wrap: wrap;
     margin: 24.24px 24.24px 16.16px 24.24px;
 }
-.project-title{
+.project-text__project-title{
     font-family: var(--default-font);
     font-weight: 500;
     font-size: 16.16px;
     color:var(--title-color);
 }
-.project-description{
+.project-text__project-description{
     font-family: var(--default-font);
     font-weight: 400;
     font-size: 14.14px;
@@ -269,12 +269,12 @@ img{
     margin-left: 60.61px;
     padding-bottom: 25.86px;
 }
-.project-link.figma::before{
+.project-link.item--figma::before{
     position: absolute;
     content: url(assets/right-sec-assets/p_figma_link.png);
     left: -37.5px;
 }
-.project-link.ui::before{
+.project-link.item--ui::before{
     position: absolute;
     content: url(assets/right-sec-assets/p_link.png);
     left: -37.5px;
@@ -324,7 +324,7 @@ img{
     display: flex;
     flex-wrap: wrap;
 }
-.loc{
+.date-time-loc__loc{
     font-size: 10.1px;
     color: var(--normal-text-color);
     font-family: var(--default-font);
@@ -332,24 +332,24 @@ img{
     margin-left: 20.2px;
     position: relative;
 }
-.loc::before{
+.date-time-loc__loc::before{
     content: url(assets/right-sec-assets/ex_location.png);
     position: absolute;
-    left: -10px;
+    left: -13px;
 }
-.date-time{
+.date-time-loc__date-time{
     color: #47516B;
     font-size: 10.1px;
     font-family: var(--default-font);
     font-weight: 400;
 }
-.job-title{
+.exp-title__job-title{
     font-family: var(--default-font);
     font-weight: 400;
     font-size: 12.12px;
     color: var(--normal-text-color);
 }
-.company{
+.exp-title__company{
     font-family: var(--default-font);
     font-weight: 500;
     font-size: 14.14px;
@@ -378,6 +378,7 @@ img{
 .education-container{
     position: relative;
     padding-left: 47.98px;
+    margin-top: 2rem;
     border-left: 3px solid var(--container-gray);
 }
 .education-container::before{
@@ -388,24 +389,24 @@ img{
 .education-container .default-container{
     width:227.61px
 }
-.ed-icon{
+.top-part__ed-icon{
     aspect-ratio: 1;
     height: 48.48px;
 }
-.ed-title{
+.top-part__ed-title{
     margin-left: 16.16px;
     font-family: var(--default-font);
     font-weight: 500;
     font-size: 12.12px;
     color: var(--title-color);
 }
-.course-name{
+.bottom-part__course-name{
     font-family: var(--default-font);
     font-weight: 500;
     font-size: 14.14px;
     color: var(--title-color);
 }
-.ed-date{
+.bottom-part__ed-date{
     font-size: 10.1px;
     font-weight: 400;
     font-family: var(--default-font);
@@ -430,6 +431,7 @@ img{
     display: flex;
     flex-direction: column;
     padding-left: 47.98px;
+    margin-top: 2rem;
     border-left: 3px solid var(--container-gray);
 }
 .skills-container::before{
@@ -451,11 +453,11 @@ img{
     width: 16.2%;
     margin-right: 8.08px;
 }
-.skill-icon{
+.left-box__skill-icon{
     aspect-ratio: 1;
     width: 24.24px;
 }
-.skill-title{
+.left-box__skill-title{
     font-size: 14.14px;
     font-weight: 500;
     font-family: var(--default-font);
@@ -469,25 +471,25 @@ img{
     padding: 16.16px;
 }
 
-.skill-purp{
+.default-container__skill-purp{
     font-size: 14.14px;
     font-weight: 500;
     font-family: var(--default-font);
     color: #9251F7;
 }
-.skill-design{
+.default-container__skill-design{
     font-size: 14.14px;
     font-weight: 500;
     font-family: var(--default-font);
     color: #9251F7;
 }
-.skill-blue{
+.default-container__skill-blue{
     font-size: 14.14px;
     font-weight: 500;
     font-family: var(--default-font);
     color: #516CF7;
 }
-.skill-dev{
+.default-container__skill-dev{
     font-size: 14.14px;
     font-weight: 500;
     font-family: var(--default-font);
@@ -541,21 +543,19 @@ img{
     width: 133.33px;
     height: 113.13px;
 }
-.tl-name{
+.tl-description__tl-name{
     color: var(--title-color);
     font-weight: 500;
     font-size: 14.14px;
     font-family: var(--default-font);
 }
-.tl-use{
+.tl-description__tl-use{
     color: var(--normal-text-color);
     font-weight: 400;
     font-size: 10.1px;
     font-family: var(--default-font);
 }
-.tl-big-row .tl-use{
-    align-items: flex-end;
-}
+
 .tl-big-row .tl-description{
     margin: 8.08px 30.34px 0px 30.34px;
     justify-content: center;
@@ -567,14 +567,6 @@ img{
     flex-flow: column wrap;
     justify-content: center;
 }
-/* .move-right--item{
-    position: absolute;
-    right:30px;
-}
-.move-bot--item{
-    position: absolute;
-    bottom: -30px;
-} */
 
 /* for phones */
 @media screen and (max-width: 577px){
@@ -630,9 +622,6 @@ img{
     }
     .project-container .default-container{
         width: 431px;
-    }
-    .education-container{
-        margin-top: 45px;
     }
     .education-container .default-container{
         margin-top: 10.1px;
