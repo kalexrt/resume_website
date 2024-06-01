@@ -135,27 +135,12 @@ img{
 .socials-container > *:not(:last-child){
     margin-bottom: 24.24px;
 }
-.instagram-container{
+.socials-container__sub-container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-.twitter-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.dribble-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.linkedin-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.social-icon{
+.socials-container__sub-container__social-icon{
     width: 32.32px;
     height: 32.32px;
     overflow: hidden;
@@ -165,12 +150,12 @@ img{
 .social-icon img{
     object-fit: cover;
 }
-.social-title{
+.socials-container__sub-container__social-text__social-title{
     font-size: 12.12px;
     font-weight: 400;
     color: var(--normal-text-color);
 }
-.social-information{
+.socials-container__sub-container__social-text__social-information{
     font-size: 14.14px;
     font-weight: 500;
     color: var(--text-title-color);
@@ -190,37 +175,22 @@ img{
 .language-container > *:not(:last-child){
     margin-bottom: 24.24px;
 }
-.italian-container{
+.language-container__sub-container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-.greek-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.english-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.spanish-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.language-icon{
+.language-container__sub-container__language-icon{
     width: 32.32px;
     height: 24.24px;
     margin-right: 16.16px;
 }
-.language-title{
+.language-container__sub-container__language-text__language-title{
     font-size: 12.12px;
     font-weight: 400;
     color: var(--normal-text-color);
 }
-.language-name{
+.language-container__sub-container__language-text__language-name{
     font-size: 14.14px;
     font-weight: 500;
     color: var(--text-title-color);
