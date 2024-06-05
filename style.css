@@ -663,6 +663,9 @@ img{
     .skills-container{
         margin-top: 30px;
     }
+    .right-box{
+        gap:9px
+    }
     .tools-container{
         width: 471.35px;
     }
