@@ -623,7 +623,8 @@ img{
         flex-direction: column;
     }
     .project-container .default-container{
-        width: 431px;
+        width: 350px;
+        margin-right: 0;
     }
     .education-container .default-container{
         margin-top: 10.1px;
